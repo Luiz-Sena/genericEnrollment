@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: enrollment
+    name: genericEnrollment
 
   datasource:
     url: jdbc:h2:mem:enrollment
