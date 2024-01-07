@@ -1,6 +1,6 @@
 # Generic Enrollment
 
-Project that provide a basic form for enrollment.
+Project provide a basic form for enrollment.
 
 
 ## Stack technologies
