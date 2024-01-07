@@ -4,8 +4,7 @@ import com.lhasena.enrollment.apis.FormPersonApi;
 import com.lhasena.enrollment.models.FormPersonModel;
 import com.lhasena.enrollment.services.FormPersonService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/form-person")
@@ -14,16 +13,20 @@ public class FormPersonController implements FormPersonApi {
     @Autowired
     private FormPersonService formPersonService;
 
+    @PostMapping
     public FormPersonModel createFormPerson(FormPersonModel formPerson){
         return new FormPersonModel();
     }
-    public FormPersonModel findFormPersonByEnrollment(String enrollment){
+    @GetMapping("/{enrollment}")
+    public FormPersonModel findFormPersonByEnrollment(@PathVariable String enrollment){
         return new FormPersonModel();
     }
+    @PutMapping
     public FormPersonModel updateFormPerson(FormPersonModel formPerson){
         return new FormPersonModel();
     }
-    public void removeFormPersonByEnrollment(String enrollment){
+    @DeleteMapping("/{enrollment}")
+    public void removeFormPersonByEnrollment(@PathVariable String enrollment){
 
     }
 }

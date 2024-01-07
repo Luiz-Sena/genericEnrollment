@@ -6,7 +6,7 @@ Project that provide a basic form for enrollment.
 ## Stack technologies
 
 **Back-end:** 
-Java 17,
+Java 11,
 Maven,
 JPA,
 Hibernate,
