@@ -1,4 +1,4 @@
-package com.lhasena.enrollment.entities;
+package com.lhasena.enrollment.entity;
 
 import javax.persistence.*;
 import java.time.LocalDate;

@@ -1,12 +1,12 @@
-package com.lhasena.enrollment.models;
+package com.lhasena.enrollment.dto;
 
 import java.time.LocalDate;
 
-public class PersonModel {
+public class PersonDTO {
     private String name;
     private String lastName;
     private String gender;
     private LocalDate birthDate;
-    private AddressModel addressModel;
+    private AddressDTO addressModel;
     private String email;
 }

@@ -1,23 +1,46 @@
-package com.lhasena.enrollment.models;
+package com.lhasena.enrollment.entity;
 
-public class AddressModel {
+import javax.persistence.*;
+
+@Entity
+@Table(name = "address")
+public class AddressEntity {
+    @Id
+    @Column(name = "ID")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
+    @Column
     private String street;
+    @Column
     private String state;
+    @Column
     private String postCode;
+    @Column
     private String number;
+    @Column
     private String country;
+    @Column
     private String complement;
 
-    public AddressModel() {
+    public AddressEntity() {
     }
 
-    public AddressModel(String street, String state, String postCode, String number, String country, String complement) {
+    public AddressEntity(Long id, String street, String state, String postCode, String number, String country, String complement) {
+        this.id = id;
         this.street = street;
         this.state = state;
         this.postCode = postCode;
         this.number = number;
         this.country = country;
         this.complement = complement;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getStreet() {

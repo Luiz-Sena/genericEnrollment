@@ -1,10 +1,10 @@
-package com.lhasena.enrollment.models;
+package com.lhasena.enrollment.dto;
 
 import java.time.LocalDateTime;
 
-public class FormPersonModel {
+public class FormPersonDTO {
     private String enrollment;
-    private FormPersonModel formPerson;
+    private FormPersonDTO formPersonDTO;
     private LocalDateTime registrationLocalDateTime;
     private LocalDateTime lastUpdated;
 }

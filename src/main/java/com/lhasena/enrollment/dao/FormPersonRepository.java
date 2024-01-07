@@ -1,6 +1,6 @@
-package com.lhasena.enrollment.repositories;
+package com.lhasena.enrollment.dao;
 
-import com.lhasena.enrollment.entities.FormPersonEntity;
+import com.lhasena.enrollment.entity.FormPersonEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
