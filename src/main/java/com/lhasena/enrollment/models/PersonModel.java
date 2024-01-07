@@ -7,4 +7,5 @@ public class PersonModel {
     private String lastName;
     private LocalDate birthDate;
     private AddressModel addressModel;
+    private String email;
 }
